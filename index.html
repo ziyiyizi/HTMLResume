@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="zh">
+	<head>
+		<!--basic-->
+		<meta charset="UTF-8">
+		<title>MyResume</title>
+		<!--style-->
+		<link href="css/style.css" rel="stylesheet" />
+		<!--[if lt IE 9]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	    <!--end navigation-->
+	    <!--main-->
+	    <main class="clearfix">
+	    	<!--sidebar-->
+	    	<aside id="sidebar">
+				<div class="inside-card">
+					<div class="sidebar-top">
+						<img class="profile-image" src="css/untitled.png"  alt=""/>
+					</div>
+
+					<div class="profile-info">
+						<p class="key">Name : </p>
+						<p class="value">xxx</p>
+					</div>
+
+					<div class="profile-info">
+						<p class="key">Phone : </p>
+						<p class="value">xxxxxxxxxxxxx</p>
+					</div>
+
+					<div class="profile-info">
+						<p class="key" >Email : </p>
+						<p class="value" >xxxxxx@xxxx.com</p>
+					</div>
+
+					<div class="profile-info">
+						<p class="key" >Wechat : </p>
+						<p class="value" >xxxxxxxxxxx</p>
+					</div>
+
+					<div class="profile-info">
+						<p class="key" >Address : </p>
+						<p class="value" >
+							Tongji University,<br/>
+							Shanghai
+						</p>
+					</div>
+
+					<div class="profile-info">
+						<a class="social-media" href="" target="_blank" >Github</a>
+						<a class="social-media" href="" target="_blank" >Blog</a>
+						<a class="social-media" href="" target="_blank" >CSDN</a>
+					</div>
+				</div>
+	    	</aside>
+	    	<!--end sidebar-->
+	    	<!--main content-->
+
+			<div class="main_content" id="content">
+				<div class="card" id="personal-summary">
+					<h1 class="heading"> Personal Summary</h1>
+					<div class="info">
+						<p class="sub-heading">What I think of myself:</p>
+						<p>Like to do back-end logic, while there are some front-end dabbling; when completing a project, more inclined to cooperate with people than to complete alone, because division of labor can make each other's work clearer, but also not only to understand the technical points of their part of responsibility. In the face of difficulties or bugs that are difficult to solve, first think for yourself. If you really don't understand them, then go to google, stack overflow search. If the search can't solve them, change a technical solution or ask senior students. </p>
+					</div>
+					<div class="info">
+						<p class="sub-heading">My attitude toward the project: </p>
+						<p>Every stage must have a goal, in the specified time to achieve this goal; if not completed, reflect on whether the coding is not concise and efficient, or lazy. For example, a website project, the first day to determine the structure of the project, the technical points involved, the functions to be done; the second day to build the environment, deploy the database, deploy the project environment; then every few days to achieve some functions, until the final test. </p>
+					</div>
+					<div class="info">
+						<p class="sub-heading">Usual study life: </p>
+						<p>I will go to see some extra books, in order to learn, in order to do projects; during the JAVAEE course, I read some books about SSM framework; Usually I will watch Daniels'projects on github.</p>
+					</div>
+				</div>
+				<div class="card" id="project-experience">
+					<h1 class="heading"> Project Experience</h1>
+					<div class="info">
+						<p class="sub-heading">Book System based on C# and Oracle</p>
+						<p class="duration">July 14 2018 - July 28 2018</p>
+						<p>During the course of database course, responsible for the development of a library management system. The Oracle database used in the database is deployed to the server. The front end uses bootstrap template to complete simple page design. The back end uses ASP.NET MVC template. I have participated in three places, but I am mainly responsible for completing the code logic of the back end (mapping database tables to classes, writing controllers, etc.). Because of limited knowledge, this department. It's relatively simple. </p>
+					</div>
+					<div class="info">
+						<p class="sub-heading">Picture sharing Web based on Java</p>
+						<p class="duration">Nov 1 2018 - DEC 14 2018</p>
+						<p>During the JAVAEE course, we developed a user-sharing website Artastic. In this project, we are responsible for the back-end development of the website. We are mainly responsible for building MYSQL database on the server, using MAVEN to build the system, and using SpringBook to build the back-end environment to realize front-end and back-end docking. Because it is a community website sharing image resources, it separates the image storage from the database, chooses to store it in the cloud, and then stores the URL to the database; because the website is small, the high concurrency is not considered in the database part, and only atomic operation is considered. In this project, WebSocket is also used to realize the message notification function, and GitHub is used to cooperate with another front-end student. </p>
+					</div>
+				</div>
+				<div class="card" id="education">
+					<h1 class="heading">Education Experience</h1>
+					<div class="info">
+						<p class="sub-heading">Courses</p>
+						<p>C Language Foundation, C++ Foundation, Discrete Mathematics, Algorithmic Design and Analysis, Data Structure, Operating System, Database System Concept, System Analysis and Design, JAVAEE Development </p>
+					</div>
+					<div class="info">
+						<p class="sub-heading">My Study</p>
+						<p>Python language, JavaScript, Android development, not very proficient, but also a better understanding. </p>
+					</div>
+				</div>
+				<div class="card" id="skills">
+					<h1 class="heading">Skills</h1>
+					<div class="info">
+						<p class="sub-heading">Skills</p>
+						<p>C language, C++, Python, Javascript, Javaee developing</p>
+					</div>
+					<div class="info">
+						<p class="sub-heading">Language</p>
+						<p>English(CET-4)</p>
+					</div>
+					<div class="info">
+						<p class="sub-heading">Tools</p>
+						<p>Photoshop, Excel, PowerPoint, HitFilm </p>
+					</div>
+				</div>
+
+			</div>
+	    	<!--end main content-->
+	    </main>
+	    <!--end main-->
+		<!--js-->
+  		<script src="js/jquery.min.js"></script>
+		<script src="js/stickySidebar.js"></script>
+		<script>
+		$(document).ready(function() {
+			$('#sidebar').stickySidebar({
+				sidebarTopMargin: 20,
+				footerThreshold: 100
+			});
+		});
+		</script>
+
+</body>
+</html>

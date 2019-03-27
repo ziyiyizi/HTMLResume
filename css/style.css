@@ -1,0 +1,113 @@
+/* NORMALIZE ............................................ */
+* { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+html, body { height: 100%; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } 
+body, div, dl, dt, dd, pre, form, fieldset, input, table, th, td, embed, object { margin: 0; padding: 0; } 
+:focus { outline: 0 } 
+:link, :visited { text-decoration: none }
+
+/* clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* HTML ELEMENTS....................................... */
+body {
+    background: #fff;
+    color: #666;
+    font: 13px/1.4em 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+/* heading */
+h1, h2, h3, h4, h5, h6 { line-height: 1em; margin: 1em 0; }
+h1 { font-size: 2.2em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.8em; }
+
+/* Main ................ */
+main {
+    margin: 20px auto;
+    max-width: 940px;
+}
+
+/* aside */
+aside {
+    float: left;
+    max-width: 220px;
+}
+
+.inside-card {
+    margin-bottom: 30px;
+    padding: 5% 5% 5% 5%;
+    background: #ffeaea;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+#sidebar.sticky {
+    float: none;
+    position: fixed;
+    top: 20px;
+    z-index: 6;
+    left: auto;
+}
+
+img {
+    width: 20%;
+}
+
+.sidebar-top {
+    position: relative;
+}
+
+.profile-basic {
+    position: absolute;
+    bottom: 0px;
+    left: 50px;
+}
+
+.profile-info {
+    padding: 20px 10px;
+    border-bottom: 1px solid #4783c2;
+}
+
+.profile-info p{
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.profile-info .key{
+    font-weight: bold;
+}
+
+.profile-info .value{
+}
+
+/* main content */
+.main_content { float: right; max-width: 700px; }
+
+/* Footer .............. */
+footer { background-color: #999; height: 300px; width: 100%; }
+
+.card {
+    margin-bottom: 30px;
+    padding: 5% 2% 5% 10%;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.info {
+    padding: 2% 1%;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.sub-heading {
+    font-weight: bold;
+}
+
+.duration {
+    color: #5da4d9;
+    font-size:12px;
+}
