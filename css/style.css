@@ -6,34 +6,29 @@ body, div, dl, dt, dd, pre, form, fieldset, input, table, th, td, embed, object 
 :focus { outline: 0 } 
 :link, :visited { text-decoration: none }
 
-/* clearfix */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
 
-
-/* HTML ELEMENTS....................................... */
 body {
     background: #fff;
     color: #666;
-    font: 13px/1.4em 'Open Sans', sans-serif;
+    font: 15px/1.5em 'Russo One', sans-serif;
     text-align: left;
 }
 
-/* heading */
 h1, h2, h3, h4, h5, h6 { line-height: 1em; margin: 1em 0; }
-h1 { font-size: 2.2em; }
+h1 { font-size: 2.2em; color: #4d4d4d; }
 h2 { font-size: 2em; }
 h3 { font-size: 1.8em; }
 
-/* Main ................ */
 main {
     margin: 20px auto;
     max-width: 940px;
 }
 
-/* aside */
 aside {
+    font: 13px/1.4em 'Open Sans', sans-serif;
     float: left;
     max-width: 220px;
 }
@@ -54,7 +49,7 @@ aside {
 }
 
 img {
-    width: 20%;
+    width: 30%;
 }
 
 .sidebar-top {
@@ -69,7 +64,7 @@ img {
 
 .profile-info {
     padding: 20px 10px;
-    border-bottom: 1px solid #4783c2;
+    border-bottom: 1px solid #c255bc;
 }
 
 .profile-info p{
@@ -85,10 +80,8 @@ img {
 .profile-info .value{
 }
 
-/* main content */
 .main_content { float: right; max-width: 700px; }
 
-/* Footer .............. */
 footer { background-color: #999; height: 300px; width: 100%; }
 
 .card {
@@ -101,10 +94,13 @@ footer { background-color: #999; height: 300px; width: 100%; }
 .info {
     padding: 2% 1%;
     border-bottom: 1px solid #bdbdbd;
+    color: #7c7c7c;
 }
 
 .sub-heading {
+    font-size: medium;
     font-weight: bold;
+    color: #606060;
 }
 
 .duration {
